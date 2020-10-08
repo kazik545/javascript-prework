@@ -26,12 +26,13 @@ if(playerInput == '1'){
 else if(playerInput == '2'){
   playerMove = 'papier';
 }
+else if(playerInput == '3'){
+  playerMove = 'nożyce';
+}
 else if (playerInput != '1' || playerInput != '2' || playerInput != '3'){
   playerMove = 'badMove'
 }
-else{
-  playerMove = 'nożyce';
-}
+
 
 if(playerInput == '1' || playerInput == '2' || playerInput =='3'){
   printMessage('Twój ruch to: ' + playerMove);
@@ -45,7 +46,7 @@ else if(computerMove == 'papier' && playerMove == 'kamień' || computerMove == '
 else if(playerMove == 'badMove') {
   printMessage('Wybierz prosze 1, 2 lub 3') 
 }
-else {
+else{
   printMessage('Wygrałeś :)');
 }
 
